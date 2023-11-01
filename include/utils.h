@@ -42,12 +42,12 @@
 /* Path images */
 # define WALL_PATH		"./img/tree.xpm"
 # define FLOOR_PATH		"./img/floor.xpm"
-# define COLLECT_PATH	"./img/potion.xpm"
+# define COLLECT_PATH		"./img/potion.xpm"
 # define EXIT_PATH		"./img/portal.xpm"
 # define CHAR_PATH		"./img/link_sprites/down_1__.xpm"
-# define CHAR_L_PATH	"./img/link_sprites/left_1__.xpm"
-# define CHAR_R_PATH	"./img/link_sprites/right_1__.xpm"
-# define CHAR_U_PATH	"./img/link_sprites/up_1__.xpm"
+# define CHAR_L_PATH		"./img/link_sprites/left_1__.xpm"
+# define CHAR_R_PATH		"./img/link_sprites/right_1__.xpm"
+# define CHAR_U_PATH		"./img/link_sprites/up_1__.xpm"
 
 /* Rules map (tiles) */
 # define TILES	"01CEP"
@@ -78,6 +78,13 @@ typedef struct s_mlx
 */
 
 /* keysym */
+// typedef struct s_sprite
+// {
+// 	void	*img;
+// 	int		height;
+// 	int		width;
+// }			t_sprite;
+
 enum e_key
 {
 	ESC		= 65307,

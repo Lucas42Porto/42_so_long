@@ -54,9 +54,9 @@ int	get_rows(t_game *game, char *file)
 
 void	render_tile(t_game *game, t_point p)
 {
+
 	if (game->map->tiles[p.y][p.x] == WALL)
 	{
-		printf("im here\n");  // verificar pos x e pos y
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->wall.ptr, (p.x * SIZE), (p.y * SIZE));
 	}
@@ -65,6 +65,11 @@ void	render_tile(t_game *game, t_point p)
 	{
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->collect.ptr, (p.x * SIZE), (p.y * SIZE));
+	}
+	else if (game->map->tiles[p.y][p.x] == PLAYER)
+	{
+		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
+		game->character.ptr, (p.x * SIZE), (p.y * SIZE));
 	}
 	else if (game->map->tiles[p.y][p.x] == EXIT)
 	{

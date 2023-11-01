@@ -25,7 +25,6 @@ bool	check_format(t_map *map)
 			return (false);
 	}
 	map->pos.x = (int)row_len;
-	printf("%s\n", map->tiles[0]);
 	return (true);
 }
 

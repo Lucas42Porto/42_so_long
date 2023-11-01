@@ -17,7 +17,7 @@ void	launch_mlx(t_game *game, t_map *map)
 	game->mlx_ptr = mlx_init();
 	if (!game->mlx_ptr)
 		exit_error(game, "Failed to initialize mlx.");
-	game->mlx_ptr = mlx_new_window(game->mlx_ptr, \
+	game->win_ptr = mlx_new_window(game->mlx_ptr, \
 			map->pos.x * SIZE, map->pos.y * SIZE, "so_long");
 	if (!game->mlx_ptr)
 		exit_error(game, "Failed to create window.");
