@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 14:47:30 by lumarque          #+#    #+#             */
-/*   Updated: 2023/09/22 18:55:07 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/14 18:26:28 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct s_list
 }					t_list;
 
 size_t		ft_strlen(const char *str);
+size_t		ft_strclen(const char *s, char c);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 
@@ -50,6 +51,7 @@ void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 t_list		*ft_lstlast(t_list *lst);
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list		*ft_lstnew(void *content);
+void		ft_free_array(char **array);
 
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strchr(const char *s, int c);

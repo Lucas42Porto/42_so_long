@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 16:17:09 by lumarque          #+#    #+#             */
-/*   Updated: 2023/09/23 15:07:31 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:36:56 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	destroy_image(t_game *game)
 {
-	if(!game->floor.ptr)
+	if (!game->floor.ptr)
 		return ;
 	mlx_destroy_image(game->mlx_ptr, game->wall.ptr);
 	mlx_destroy_image(game->mlx_ptr, game->floor.ptr);
@@ -53,7 +53,6 @@ void	clean_game(t_game *game)
 	if (game->map)
 		clean_map(game->map);
 	destroy_image(game);
-
 	if (game->win_ptr)
 		mlx_destroy_window(game->mlx_ptr, game->win_ptr);
 	if (game->mlx_ptr)
@@ -64,6 +63,5 @@ void	clean_game(t_game *game)
 int	endgame(t_game *game)
 {
 	clean_game(game);
-	ft_putstr_fd("End Game !\n", 2);
 	exit(EXIT_SUCCESS);
 }

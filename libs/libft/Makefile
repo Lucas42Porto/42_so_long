@@ -6,7 +6,7 @@
 #    By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/16 14:47:25 by lumarque          #+#    #+#              #
-#    Updated: 2023/09/22 19:03:23 by lumarque         ###   ########.fr        #
+#    Updated: 2023/11/14 18:27:08 by lumarque         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,8 @@ SRC = ft_atoi.c ft_strlen.c ft_bzero.c ft_memset.c ft_calloc.c ft_isalnum.c \
 		ft_memmove.c ft_putendl_fd.c ft_strchr.c ft_putnbr_fd.c \
 		ft_strdup.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strncmp.c \
 		ft_strnstr.c ft_strrchr.c ft_substr.c ft_tolower.c ft_toupper.c \
-		ft_strmapi.c ft_striteri.c ft_itoa.c ft_strtrim.c \
-		ft_printf.c ft_print_alpha.c ft_putnbase.c	\
+		ft_strmapi.c ft_striteri.c ft_itoa.c ft_strtrim.c ft_free_array.c\
+		ft_printf.c ft_print_alpha.c ft_putnbase.c ft_strclen.c	\
 		ft_lstsize.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_back.c \
 		ft_lstnew.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 		./42_get_next_line/get_next_line_bonus.c \

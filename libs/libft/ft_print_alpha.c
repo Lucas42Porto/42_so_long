@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 18:32:57 by lumarque          #+#    #+#             */
-/*   Updated: 2023/06/11 16:53:08 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:40:19 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_print_str(char *s, int fd)
 	return (len);
 }
 
-size_t	ft_strlen(const char *str)
+size_t	print_strlen(const char *str)
 {
 	size_t	i;
 

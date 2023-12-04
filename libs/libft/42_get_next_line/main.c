@@ -6,12 +6,11 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 14:18:08 by lumarque          #+#    #+#             */
-/*   Updated: 2023/07/09 18:37:46 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/20 16:48:09 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
 
 int	main(void)
 {
@@ -28,21 +27,15 @@ int	main(void)
 		return (1);
 	}
 	line = get_next_line(fd);
-		printf("%s", line);
-	
+	printf("%s", line);
 	line = get_next_line(fd);
-		printf("%s", line);
-	
+	printf("%s", line);
 	line1 = get_next_line(fd1);
-		printf("%s", line1);
-
+	printf("%s", line1);
 	line1 = get_next_line(fd1);
-		printf("%s", line1);
-
+	printf("%s", line1);
 	line = get_next_line(fd);
-		printf("%s", line);
-
-	
+	printf("%s", line);
 	close(fd);
 	close(fd1);
 	return (0);

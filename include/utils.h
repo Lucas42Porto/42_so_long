@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 19:01:07 by lumarque          #+#    #+#             */
-/*   Updated: 2023/09/23 17:15:47 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:38:41 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define UTILS_H
 
 # include "utils.h"
-
 
 /* Color codes for printf  */
 # define DEFAULT "\033[0;39m"
@@ -44,13 +43,14 @@
 # define FLOOR_PATH		"./img/floor.xpm"
 # define COLLECT_PATH		"./img/potion.xpm"
 # define EXIT_PATH		"./img/portal.xpm"
-# define CHAR_PATH		"./img/link_sprites/down_1__.xpm"
+# define CHAR_PATH		"./img/link_sprites/down_2__.xpm"
 # define CHAR_L_PATH		"./img/link_sprites/left_1__.xpm"
 # define CHAR_R_PATH		"./img/link_sprites/right_1__.xpm"
 # define CHAR_U_PATH		"./img/link_sprites/up_1__.xpm"
 
 /* Rules map (tiles) */
 # define TILES	"01CEP"
+
 typedef enum e_tile
 {
 	SPACE	= '0',
@@ -60,31 +60,6 @@ typedef enum e_tile
 	PLAYER	= 'P',
 }			t_tile;
 
-/* */
-typedef struct s_draw
-{
-	char	**map;
-	int		height;
-	int		length;
-	char	*line;
-}	t_draw;
-
-/* Window 
-typedef struct s_mlx
-{
-    void	*mlx_ptr;
-    void	*win_ptr;
-}	t_mlx;
-*/
-
-/* keysym */
-// typedef struct s_sprite
-// {
-// 	void	*img;
-// 	int		height;
-// 	int		width;
-// }			t_sprite;
-
 enum e_key
 {
 	ESC		= 65307,
@@ -93,9 +68,9 @@ enum e_key
 	S		= 115,
 	D		= 100,
 	UP		= 65362,
-	DOWN	= 65364,
-	LEFT	= 65361,
-	RIGHT	= 65363,
+	DOWN		= 65364,
+	LEFT		= 65361,
+	RIGHT		= 65363,
 };
 
 typedef struct s_img
@@ -111,37 +86,36 @@ typedef struct s_img
 
 typedef struct s_point
 {
-	int	x; // cols
-	int	y; // rows
+	int	x;
+	int	y;
 }			t_point;
 
 typedef struct s_map
 {
 	char	**tiles;
 	t_point	pos;
-	int	coins;
-	int	exit;
-	int	player;
+	int		coins;
+	int		exit;
+	int		player;
 }			t_map;
 
 typedef struct s_game
 {
-	void	*mlx_ptr; /* Window */
-	void	*win_ptr; /* Window */
-
-	t_map		*map;
-	t_point		curr;
-	t_point		next;
-	t_img		character;
-	t_img		character_l;
-	t_img		character_r;
-	t_img		character_u;
-	t_img		floor;
-	t_img		wall;
-	t_img		collect;
-	t_img		exit;
-	int			coin;
-	int			moves;
+	void	*mlx_ptr;
+	void	*win_ptr;
+	t_map	*map;
+	t_point	curr;
+	t_point	next;
+	t_img	character;
+	t_img	character_l;
+	t_img	character_r;
+	t_img	character_u;
+	t_img	floor;
+	t_img	wall;
+	t_img	collect;
+	t_img	exit;
+	int		coin;
+	int		moves;
 }					t_game;
 
 #endif

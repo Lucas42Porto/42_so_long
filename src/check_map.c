@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 18:45:49 by lumarque          #+#    #+#             */
-/*   Updated: 2023/10/03 18:24:16 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:31:53 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 bool	check_format(t_map *map)
 {
-	int	i;
 	size_t	row_len;
+	int		i;
 
 	i = -1;
 	row_len = ft_strlen(map->tiles[0]);
@@ -73,9 +73,9 @@ int	check_tiles(t_game *game, t_map *map)
 
 int	check_paths(t_game *game, t_map *map)
 {
-	int	i;
-	int		reach_exit;
 	char	**tiles;
+	int		i;
+	int		reach_exit;
 
 	i = -1;
 	reach_exit = 0;

@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:50:58 by lumarque          #+#    #+#             */
-/*   Updated: 2023/10/03 18:18:25 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:33:50 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,3 @@ t_img	new_sprite(void *mlx, char *path)
 	img.ptr = mlx_xpm_file_to_image(mlx, path, &img.x, &img.y);
 	return (img);
 }
-

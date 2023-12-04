@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_free_array.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/16 16:30:05 by lumarque          #+#    #+#             */
-/*   Updated: 2023/11/20 16:48:34 by lumarque         ###   ########.fr       */
+/*   Created: 2023/04/15 16:59:50 by lumarque          #+#    #+#             */
+/*   Updated: 2023/11/20 16:45:20 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+void	ft_free_array(char **array)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		c += ('a' - 'A');
-	return (c);
+	int	i;
+
+	i = 0;
+	while (array[i])
+		free(array[i++]);
+	free(array);
 }
-
-// int		main(void)
-// {
-// 	printf("%d\n", ft_tolower(A));
-// 	printf("%d\n", tolower(A));
-
-// 	return (0);
-// }

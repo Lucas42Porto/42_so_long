@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 19:14:31 by lumarque          #+#    #+#             */
-/*   Updated: 2023/09/22 18:55:44 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:40:07 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int		ft_print_percent(void);
 int		ft_print_str(char *s, int fd);
 int		ft_printnbr_fd(int n, int fd);
 int		ft_nbrlen(long nbr, int base);
-size_t	ft_strlen(const char *str);
+size_t	print_strlen(const char *str);
 
 #endif

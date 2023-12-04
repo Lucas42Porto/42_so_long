@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 16:33:26 by lumarque          #+#    #+#             */
-/*   Updated: 2023/10/03 18:30:56 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:35:55 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,13 +54,11 @@ int	get_rows(t_game *game, char *file)
 
 void	render_tile(t_game *game, t_point p)
 {
-
 	if (game->map->tiles[p.y][p.x] == WALL)
 	{
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->wall.ptr, (p.x * SIZE), (p.y * SIZE));
 	}
-
 	else if (game->map->tiles[p.y][p.x] == COIN)
 	{
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
@@ -85,7 +83,7 @@ void	render_tile(t_game *game, t_point p)
 
 void	render_map(t_game *game, t_map *map)
 {
-	t_point position;
+	t_point	position;
 
 	position.y = -1;
 	while (++position.y < map->pos.y)
@@ -98,10 +96,9 @@ void	render_map(t_game *game, t_map *map)
 
 void	read_map(t_game *game, char *file)
 {
-
-	int		fd;
 	char	*line;
-	int	i;
+	int		fd;
+	int		i;
 
 	i = -1;
 	game->map = create_map(0, get_rows(game, file));

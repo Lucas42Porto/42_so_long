@@ -6,19 +6,19 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/10 17:33:25 by lumarque          #+#    #+#             */
-/*   Updated: 2023/07/09 14:22:48 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/20 16:51:02 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include<stdio.h>
-# include<unistd.h>
-# include<stdlib.h>
-# include<sys/types.h>
-# include<sys/stat.h>
-# include<fcntl.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42

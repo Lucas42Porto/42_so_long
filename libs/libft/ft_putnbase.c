@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 18:37:07 by lumarque          #+#    #+#             */
-/*   Updated: 2023/09/22 19:06:00 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/20 15:51:29 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,6 @@ int	ft_printnbr_fd(int n, int fd)
 		ft_printnbr_fd(-n, fd);
 	}
 	return (ft_nbrlen(nbr, 10));
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	while (*s != (char)c)
-	{
-		if (!*s)
-			return (NULL);
-		s++;
-	}
-	return ((char *)s);
 }
 
 static int	ft_nbrlen_ul(unsigned long nbr, unsigned int base)

@@ -6,7 +6,7 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 15:45:21 by lumarque          #+#    #+#             */
-/*   Updated: 2023/09/22 20:06:39 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:10:34 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,16 @@
 
 int	handle_keypress(int keysym, t_game *game)
 {
-	if (keysym == UP || keysym == W )
-			game->next = (t_point){game->curr.x, game->curr.y - 1};
+	if (keysym == UP || keysym == W)
+		game->next = (t_point){game->curr.x, game->curr.y - 1};
 	if (keysym == DOWN || keysym == S)
-			game->next = (t_point){game->curr.x, game->curr.y + 1};
+		game->next = (t_point){game->curr.x, game->curr.y + 1};
 	if (keysym == LEFT || keysym == A)
-			game->next = (t_point){game->curr.x - 1, game->curr.y};
+		game->next = (t_point){game->curr.x - 1, game->curr.y};
 	if (keysym == RIGHT || keysym == D)
-			game->next = (t_point){game->curr.x + 1, game->curr.y};
+		game->next = (t_point){game->curr.x + 1, game->curr.y};
 	if (keysym == ESC)
-	{
-		mlx_destroy_window(game->mlx_ptr, game->win_ptr);
-		game->win_ptr = NULL;
-	}
+		endgame(game);
 	return (0);
 }
 

@@ -6,14 +6,14 @@
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 18:48:35 by lumarque          #+#    #+#             */
-/*   Updated: 2023/04/23 13:58:47 by lumarque         ###   ########.fr       */
+/*   Updated: 2023/11/20 16:48:58 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
-{	
+{
 	unsigned int	y;
 
 	if (n < 0)

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strclen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lumarque <lumarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/16 16:30:05 by lumarque          #+#    #+#             */
-/*   Updated: 2023/11/20 16:48:34 by lumarque         ###   ########.fr       */
+/*   Created: 2023/04/15 17:37:47 by lumarque          #+#    #+#             */
+/*   Updated: 2023/11/14 17:49:13 by lumarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+size_t	ft_strclen(const char *s, char c)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		c += ('a' - 'A');
-	return (c);
+	size_t	len;
+
+	len = 0;
+	while (s && s[len] != c && s[len])
+		len++;
+	return (len);
 }
-
-// int		main(void)
-// {
-// 	printf("%d\n", ft_tolower(A));
-// 	printf("%d\n", tolower(A));
-
-// 	return (0);
-// }
