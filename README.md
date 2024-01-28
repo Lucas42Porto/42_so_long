@@ -19,9 +19,15 @@ After compilation, you can run the game using the following command:
 
 ```shell
 ./so_long <map>
+
 ```
 
 Replace `<map>` with the path to the map file you want to use. The map file should have the `.ber` extension and follow the format specified in the project. Inside the `maps` folder there are some examples of valid and invalid maps.
+
+```shell
+./so_long maps/small.ber
+
+```
 
 ## Game Rules
 - The player starts at an initial position marked by a character.
